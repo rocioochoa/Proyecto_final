@@ -1,0 +1,41 @@
+anio,sexo,causa_del_accidente,causaacci
+2015,Hombre              ,Conductor                                         ,269765
+2015,Hombre              ,Falla del vehículo                                ,2239
+2015,Hombre              ,Mala condición del camino                         ,10523
+2015,Hombre              ,Peatón o pasajero                                 ,2678
+2015,Mujer               ,Conductor                                         ,50980
+2015,Mujer               ,Falla del vehículo                                ,278
+2015,Mujer               ,Mala condición del camino                         ,2519
+2015,Mujer               ,Peatón o pasajero                                 ,473
+2016,Hombre              ,Conductor                                         ,247004
+2016,Hombre              ,Falla del vehículo                                ,3030
+2016,Hombre              ,Mala condición del camino                         ,7430
+2016,Hombre              ,Peatón o pasajero                                 ,2425
+2016,Mujer               ,Conductor                                         ,48046
+2016,Mujer               ,Falla del vehículo                                ,407
+2016,Mujer               ,Mala condición del camino                         ,1618
+2016,Mujer               ,Peatón o pasajero                                 ,443
+2017,Hombre              ,Conductor                                         ,252013
+2017,Hombre              ,Falla del vehículo                                ,2834
+2017,Hombre              ,Mala condición del camino                         ,8003
+2017,Hombre              ,Peatón o pasajero                                 ,2234
+2017,Mujer               ,Conductor                                         ,49368
+2017,Mujer               ,Falla del vehículo                                ,366
+2017,Mujer               ,Mala condición del camino                         ,1818
+2017,Mujer               ,Peatón o pasajero                                 ,372
+2018,Hombre              ,Conductor                                         ,249177
+2018,Hombre              ,Falla del vehículo                                ,2797
+2018,Hombre              ,Mala condición del camino                         ,6765
+2018,Hombre              ,Peatón o pasajero                                 ,2236
+2018,Mujer               ,Conductor                                         ,50181
+2018,Mujer               ,Falla del vehículo                                ,356
+2018,Mujer               ,Mala condición del camino                         ,1367
+2018,Mujer               ,Peatón o pasajero                                 ,437
+2019,Hombre              ,Conductor                                         ,247428
+2019,Hombre              ,Falla del vehículo                                ,2751
+2019,Hombre              ,Mala condición del camino                         ,6610
+2019,Hombre              ,Peatón o pasajero                                 ,2299
+2019,Mujer               ,Conductor                                         ,51564
+2019,Mujer               ,Falla del vehículo                                ,353
+2019,Mujer               ,Mala condición del camino                         ,1416
+2019,Mujer               ,Peatón o pasajero                                 ,417
