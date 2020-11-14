@@ -5,5 +5,6 @@ Buscaremos relacionar el sexo con diferentes variables como el tipo de accidente
 El trabajo constará de 3 partes para su desarrollo 
    1. Unir las tablas con los datos de diferentes años (python)
    2. Filtrar datos en tablas más pequeñas para un mejor análisis(SQL)
-   3. Graficar las tablas obtenidas para tener un análisis de manera gráfica (tableau, python) 
+   3. Graficar las tablas obtenidas para tener un análisis de manera gráfica (tableau, python)
+   
 En esta sección podrán ver los avances, tablas, códigos y gráficas
