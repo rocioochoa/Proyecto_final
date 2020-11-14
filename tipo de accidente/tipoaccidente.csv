@@ -1,0 +1,121 @@
+anio,sexo,tipo_accidente,tipaccid
+2015,Hombre              ,Caída de pasajero                                 ,2051
+2015,Hombre              ,Colisión con animal                               ,944
+2015,Hombre              ,Colisión con ciclista                             ,4404
+2015,Hombre              ,Colisión con ferrocarril                          ,205
+2015,Hombre              ,Colisión con motocicleta                          ,25408
+2015,Hombre              ,Colisión con objeto fijo                          ,34603
+2015,Hombre              ,Colisión con peatón (atropellamiento)             ,10213
+2015,Hombre              ,Colisión con vehículo automotor                   ,196494
+2015,Hombre              ,Incendio                                          ,214
+2015,Hombre              ,Otro                                              ,3653
+2015,Hombre              ,Salida del camino                                 ,5670
+2015,Hombre              ,Volcadura                                         ,6126
+2015,Mujer               ,Caída de pasajero                                 ,222
+2015,Mujer               ,Colisión con animal                               ,127
+2015,Mujer               ,Colisión con ciclista                             ,530
+2015,Mujer               ,Colisión con ferrocarril                          ,20
+2015,Mujer               ,Colisión con motocicleta                          ,3546
+2015,Mujer               ,Colisión con objeto fijo                          ,5065
+2015,Mujer               ,Colisión con peatón (atropellamiento)             ,1727
+2015,Mujer               ,Colisión con vehículo automotor                   ,42148
+2015,Mujer               ,Incendio                                          ,39
+2015,Mujer               ,Otro                                              ,509
+2015,Mujer               ,Salida del camino                                 ,649
+2015,Mujer               ,Volcadura                                         ,771
+2016,Hombre              ,Caída de pasajero                                 ,1732
+2016,Hombre              ,Colisión con animal                               ,1104
+2016,Hombre              ,Colisión con ciclista                             ,3960
+2016,Hombre              ,Colisión con ferrocarril                          ,215
+2016,Hombre              ,Colisión con motocicleta                          ,25901
+2016,Hombre              ,Colisión con objeto fijo                          ,32163
+2016,Hombre              ,Colisión con peatón (atropellamiento)             ,9188
+2016,Hombre              ,Colisión con vehículo automotor                   ,179469
+2016,Hombre              ,Incendio                                          ,209
+2016,Hombre              ,Otro                                              ,3602
+2016,Hombre              ,Salida del camino                                 ,5773
+2016,Hombre              ,Volcadura                                         ,6185
+2016,Mujer               ,Caída de pasajero                                 ,196
+2016,Mujer               ,Colisión con animal                               ,81
+2016,Mujer               ,Colisión con ciclista                             ,507
+2016,Mujer               ,Colisión con ferrocarril                          ,20
+2016,Mujer               ,Colisión con motocicleta                          ,3849
+2016,Mujer               ,Colisión con objeto fijo                          ,5214
+2016,Mujer               ,Colisión con peatón (atropellamiento)             ,1577
+2016,Mujer               ,Colisión con vehículo automotor                   ,40716
+2016,Mujer               ,Incendio                                          ,24
+2016,Mujer               ,Otro                                              ,422
+2016,Mujer               ,Salida del camino                                 ,721
+2016,Mujer               ,Volcadura                                         ,776
+2017,Hombre              ,Caída de pasajero                                 ,1631
+2017,Hombre              ,Colisión con animal                               ,818
+2017,Hombre              ,Colisión con ciclista                             ,3887
+2017,Hombre              ,Colisión con ferrocarril                          ,230
+2017,Hombre              ,Colisión con motocicleta                          ,27791
+2017,Hombre              ,Colisión con objeto fijo                          ,31833
+2017,Hombre              ,Colisión con peatón (atropellamiento)             ,9107
+2017,Hombre              ,Colisión con vehículo automotor                   ,183297
+2017,Hombre              ,Incendio                                          ,124
+2017,Hombre              ,Otro                                              ,3890
+2017,Hombre              ,Salida del camino                                 ,6175
+2017,Hombre              ,Volcadura                                         ,6294
+2017,Mujer               ,Caída de pasajero                                 ,162
+2017,Mujer               ,Colisión con animal                               ,90
+2017,Mujer               ,Colisión con ciclista                             ,530
+2017,Mujer               ,Colisión con ferrocarril                          ,33
+2017,Mujer               ,Colisión con motocicleta                          ,4079
+2017,Mujer               ,Colisión con objeto fijo                          ,5322
+2017,Mujer               ,Colisión con peatón (atropellamiento)             ,1627
+2017,Mujer               ,Colisión con vehículo automotor                   ,41240
+2017,Mujer               ,Incendio                                          ,27
+2017,Mujer               ,Otro                                              ,574
+2017,Mujer               ,Salida del camino                                 ,788
+2017,Mujer               ,Volcadura                                         ,797
+2018,Hombre              ,Caída de pasajero                                 ,1374
+2018,Hombre              ,Colisión con animal                               ,751
+2018,Hombre              ,Colisión con ciclista                             ,3522
+2018,Hombre              ,Colisión con ferrocarril                          ,227
+2018,Hombre              ,Colisión con motocicleta                          ,29121
+2018,Hombre              ,Colisión con objeto fijo                          ,30767
+2018,Hombre              ,Colisión con peatón (atropellamiento)             ,8760
+2018,Hombre              ,Colisión con vehículo automotor                   ,178173
+2018,Hombre              ,Incendio                                          ,125
+2018,Hombre              ,Otro                                              ,3694
+2018,Hombre              ,Salida del camino                                 ,6405
+2018,Hombre              ,Volcadura                                         ,6295
+2018,Mujer               ,Caída de pasajero                                 ,163
+2018,Mujer               ,Colisión con animal                               ,79
+2018,Mujer               ,Colisión con ciclista                             ,511
+2018,Mujer               ,Colisión con ferrocarril                          ,24
+2018,Mujer               ,Colisión con motocicleta                          ,4542
+2018,Mujer               ,Colisión con objeto fijo                          ,5141
+2018,Mujer               ,Colisión con peatón (atropellamiento)             ,1591
+2018,Mujer               ,Colisión con vehículo automotor                   ,40668
+2018,Mujer               ,Incendio                                          ,24
+2018,Mujer               ,Otro                                              ,518
+2018,Mujer               ,Salida del camino                                 ,811
+2018,Mujer               ,Volcadura                                         ,818
+2019,Hombre              ,Caída de pasajero                                 ,1548
+2019,Hombre              ,Colisión con animal                               ,801
+2019,Hombre              ,Colisión con ciclista                             ,3529
+2019,Hombre              ,Colisión con ferrocarril                          ,193
+2019,Hombre              ,Colisión con motocicleta                          ,33516
+2019,Hombre              ,Colisión con objeto fijo                          ,30314
+2019,Hombre              ,Colisión con peatón (atropellamiento)             ,8955
+2019,Hombre              ,Colisión con vehículo automotor                   ,171801
+2019,Hombre              ,Incendio                                          ,163
+2019,Hombre              ,Otro                                              ,3378
+2019,Hombre              ,Salida del camino                                 ,6878
+2019,Hombre              ,Volcadura                                         ,6450
+2019,Mujer               ,Caída de pasajero                                 ,208
+2019,Mujer               ,Colisión con animal                               ,99
+2019,Mujer               ,Colisión con ciclista                             ,529
+2019,Mujer               ,Colisión con ferrocarril                          ,28
+2019,Mujer               ,Colisión con motocicleta                          ,5305
+2019,Mujer               ,Colisión con objeto fijo                          ,5240
+2019,Mujer               ,Colisión con peatón (atropellamiento)             ,1531
+2019,Mujer               ,Colisión con vehículo automotor                   ,40942
+2019,Mujer               ,Incendio                                          ,26
+2019,Mujer               ,Otro                                              ,496
+2019,Mujer               ,Salida del camino                                 ,891
+2019,Mujer               ,Volcadura                                         ,799
