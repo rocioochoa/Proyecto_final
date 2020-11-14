@@ -1,0 +1,45 @@
+Obtuvimos los datos de la página del INEGI, utilizamos las tablas de 2015 a 2019
+https://www.inegi.org.mx/temas/accidentes/#Tabulados
+
+Código para unir los diferentes años con Python y guardar la tabla lista
+
+import numpy as np
+import pandas as pd
+
+#Estabelcemos el data frame para el año
+
+a=pd.read_csv('atus_anual_2015.csv')
+b=pd.read_csv('atus_anual_2016.csv')
+c=pd.read_csv('atus_anual_2017.csv')
+d=pd.read_csv('atus_anual_2018.csv')
+e=pd.read_csv('atus_anual_2019.csv')
+
+DataFrameA = pd.DataFrame(a)
+DataFrameB = pd.DataFrame(b)
+DataFrameC = pd.DataFrame(c)
+DataFrameD = pd.DataFrame(d)
+DataFrameE = pd.DataFrame(e)
+
+##---------------------------CONCAT--------------------
+##UNIR
+
+JuntosAB= DataFrameA.concat(DataFrameB)
+dfJuntosAB=pd.DataFrame(JuntosAB)
+
+
+JuntosABC= dfJuntosAB.concat(DataFrameC)
+dfJuntosABC=pd.DataFrame(JuntosABC)
+
+
+JuntosABCD= dfJuntosABC.concat(DataFrameD)
+dfJuntosABCD=pd.DataFrame(JuntosABCD)
+
+
+JuntosABCDE= dfJuntosABCD.concat(DataFrameE)
+dfJuntosABCDE=pd.DataFrame(JuntosABCDE)
+print(dfJuntosABCDE)
+
+
+##-------------------------EXPORTAR CSV-------------------------
+
+dfJuntosABCDE.to_csv (r'/Ciencia de Datos/Accidentes/export_dataframe.csv', index = False, header=True)
