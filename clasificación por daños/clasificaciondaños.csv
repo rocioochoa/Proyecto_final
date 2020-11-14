@@ -1,0 +1,31 @@
+anio,sexo,clasificacion_accidente,clasacc
+2015,Hombre              ,Fatal                                             ,2837
+2015,Hombre              ,No fatal                                          ,56697
+2015,Hombre              ,Sólo daños                                        ,230451
+2015,Mujer               ,Fatal                                             ,228
+2015,Mujer               ,No fatal                                          ,9879
+2015,Mujer               ,Sólo daños                                        ,45246
+2016,Hombre              ,Fatal                                             ,2725
+2016,Hombre              ,No fatal                                          ,51901
+2016,Hombre              ,Sólo daños                                        ,214875
+2016,Mujer               ,Fatal                                             ,269
+2016,Mujer               ,No fatal                                          ,9035
+2016,Mujer               ,Sólo daños                                        ,44799
+2017,Hombre              ,Fatal                                             ,2655
+2017,Hombre              ,No fatal                                          ,49470
+2017,Hombre              ,Sólo daños                                        ,222952
+2017,Mujer               ,Fatal                                             ,208
+2017,Mujer               ,No fatal                                          ,8699
+2017,Mujer               ,Sólo daños                                        ,46362
+2018,Hombre              ,Fatal                                             ,2553
+2018,Hombre              ,No fatal                                          ,47948
+2018,Hombre              ,Sólo daños                                        ,218713
+2018,Mujer               ,Fatal                                             ,214
+2018,Mujer               ,No fatal                                          ,8635
+2018,Mujer               ,Sólo daños                                        ,46041
+2019,Hombre              ,Fatal                                             ,2588
+2019,Hombre              ,No fatal                                          ,50062
+2019,Hombre              ,Sólo daños                                        ,214876
+2019,Mujer               ,Fatal                                             ,230
+2019,Mujer               ,No fatal                                          ,8933
+2019,Mujer               ,Sólo daños                                        ,46931
