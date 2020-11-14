@@ -1,0 +1,104 @@
+TABLAS CREADAS
+todas las tablas estan separadas por sexo
+
+Total de accidentes y personas totales involucradas 
+create table totales as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, sum(AUTOMOVIL+CAMPASAJ+MICROBUS+PASCAMION+OMNIBUS+TRANVIA+CAMIONETA+CAMION+TRACTOR+FERROCARRI+MOTOCICLET+BICICLETA+OTROVEHIC)
+	FROM accidentesjuntos
+	where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+	group by (accidentesjuntos.anio, accidentesjuntos.sexo));
+	
+Accidentes causados por el conductor
+create table totalconductor as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, count (sexo) as accidentes
+from accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+group by(accidentesjuntos.anio, accidentesjuntos.sexo));
+
+total de accidentes por día 
+create table pordia as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo,accidentesjuntos.DIASEMANA, sum(AUTOMOVIL+CAMPASAJ+MICROBUS+PASCAMION+OMNIBUS+TRANVIA+CAMIONETA+CAMION+TRACTOR+FERROCARRI+MOTOCICLET+BICICLETA+OTROVEHIC)
+	FROM accidentesjuntos
+	where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+	group by (accidentesjuntos.anio, accidentesjuntos.sexo,accidentesjuntos.diasemana));
+
+aliento alcohólico
+create table alientoshm as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.aliento as aliento_alcoholico, count (*)aliento
+	FROM accidentesjuntos
+	where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó' and accidentesjuntos.aliento <>'Se ignora'
+	group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.aliento));
+
+clasificación de daños 
+create table clasifdedaños as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.CLASACC as clasificacion_accidente, count(*) CLASACC
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.CLASACC));
+
+tipo de accidente
+create table tipoaccidente as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.TIPACCID as tipo_accidente, count(*) TIPACCID
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.TIPACCID));
+
+causa del accidente
+create table causaaccidente as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.CAUSAACCI as causa_del_accidente, count(*) CAUSAACCI
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero'and accidentesjuntos.sexo<>'Se fugó' and accidentesjuntos.causaacci<>'Otra'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.CAUSAACCI));
+
+edades de los accidentes
+create table edadesacci as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.ID_EDAD as Edades, count(*)ID_EDAD
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.ID_EDAD<>'99' and accidentesjuntos.sexo<>'Se fugó'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.ID_EDAD));
+
+Total heridos y muertos
+create table muertosyheridos as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, sum(CONDHERIDO+PASAHERIDO+PEATHERIDO+CICLHERIDO+OTROHERIDO+NEHERIDO)as numero_heridos, sum(CONDMUERTO+PASAMUERTO+PEATMUERTO+CICLMUERTO+OTROMUERTO+NEMUERTO)as numero_muertos
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero'and accidentesjuntos.sexo<>'Se fugó'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo));
+
+Aliento alcohólico por edad
+create table alientoedadsexo as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.aliento as aliento_alcoholico, count (*) aliento, accidentesjuntos.ID_EDAD as Edades
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.ID_EDAD<>'99' and accidentesjuntos.aliento<>'Se ignora' and accidentesjuntos.sexo<>'Se fugó'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.ID_EDAD, accidentesjuntos.aliento)
+order by (accidentesjuntos.ID_EDAD));
+
+Aliento alcohólico positivo y edad 
+create table edadysibeben as (
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.aliento as consumieron_alcohol, count (*) aliento, accidentesjuntos.ID_EDAD as Edades
+FROM accidentesjuntos
+where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.ID_EDAD<>'99' and accidentesjuntos.aliento<>'Se ignora' and accidentesjuntos.aliento<>'No' and accidentesjuntos.sexo<>'Se fugó'
+group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.ID_EDAD, accidentesjuntos.aliento)
+order by (accidentesjuntos.ID_EDAD));
+
+accidentes por estado
+create table accidenteporestado as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.id_entidad,sum(AUTOMOVIL+CAMPASAJ+MICROBUS+PASCAMION+OMNIBUS+TRANVIA+CAMIONETA+CAMION+TRACTOR+FERROCARRI+MOTOCICLET+BICICLETA+OTROVEHIC)
+	FROM accidentesjuntos
+	where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+	group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.id_entidad));
+	
+accidentes en ciudad de mexico
+create table accidentescdmx as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.id_municipio, sum(AUTOMOVIL+CAMPASAJ+MICROBUS+PASCAMION+OMNIBUS+TRANVIA+CAMIONETA+CAMION+TRACTOR+FERROCARRI+MOTOCICLET+BICICLETA+OTROVEHIC)
+	FROM accidentesjuntos
+	where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó' and accidentesjuntos.id_entidad='9'
+	group by (accidentesjuntos.anio, accidentesjuntos.sexo, accidentesjuntos.id_municipio));
+	
+accidentes por mes
+create table accidentemes as(
+select distinct accidentesjuntos.anio, accidentesjuntos.sexo,accidentesjuntos.mes, sum(AUTOMOVIL+CAMPASAJ+MICROBUS+PASCAMION+OMNIBUS+TRANVIA+CAMIONETA+CAMION+TRACTOR+FERROCARRI+MOTOCICLET+BICICLETA+OTROVEHIC)
+	FROM accidentesjuntos
+	where accidentesjuntos.sexo<>'Certificado cero' and accidentesjuntos.sexo<>'Se fugó'
+	group by (accidentesjuntos.anio, accidentesjuntos.sexo,accidentesjuntos.mes));
+	
+		
